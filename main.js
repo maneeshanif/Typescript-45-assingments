@@ -24,7 +24,7 @@ console.log("\n");
 let personName1 = ("Mohummad Anees");
 console.log("lowercase:", personName1.toLowerCase());
 console.log("uppercase:", personName1.toUpperCase());
-console.log("titlecase:", personName1.replace(/\b\w/g, c => c.toUpperCase()));
+console.log("titlecase", personName1.charAt(0).toUpperCase() + personName1.slice(1).toLowerCase());
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 QUESTION: 4;
 console.log("\t\t\t\t\t\t\t Question 4");
