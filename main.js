@@ -1,4 +1,3 @@
-"use strict";
 ///////////////////////////////////@\\\\\\\\\\\\\\\\\\\((((({START})))))\\\\\\\\\\\\\\\\\@///////////////////////////////////////////////////// 
 QUESTION: 1;
 console.log("\t\t\t\t\t\t\t Question 1");
@@ -802,9 +801,13 @@ QUESTION: 45;
 console.log("\t\t\t\t\t\t\t Question 45");
 console.log("\n");
 function createCar(manufacture, model, optional) {
-    return Object.assign({ manufacture,
-        model }, optional);
+    return {
+        manufacture,
+        model,
+        ...optional
+    };
 }
 const myCar = createCar("Toyota", "Corola", { color: "silver", year: "2024" });
 console.log(myCar);
+export {};
 /////////////////////////////////////////////////////////THE END//////////////////////////////////////////////////////////////////////
